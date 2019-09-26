@@ -1,4 +1,4 @@
 # Client-Server-Application
 
-En Server and Client application som kommunicerar using sockets. Klienten skall skicka en fråga till servern 
-som i sin tur ska svara och skicka svaret tillbaks till klienten.
+En Server/Client applikation som kommunicerar using sockets. Som en uppgift så skall klienten skicka en fråga till servern 
+som i sin tur ska svara på det och skicka svaret tillbaks till klienten.
