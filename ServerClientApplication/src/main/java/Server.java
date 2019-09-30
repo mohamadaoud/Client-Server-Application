@@ -2,6 +2,7 @@
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Date;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -19,7 +20,7 @@ public class Server {
         try (ServerSocket serverSocket = new ServerSocket(35000)) {
             boolean runServer = true;
             while (runServer) {
-                System.out.println("Waiting for client!");
+                System.out.println("Connecton opened. (" + new Date() + ")");
                 Socket socket = serverSocket.accept();
                 Application application = new Application(socket);
                 application.start();
