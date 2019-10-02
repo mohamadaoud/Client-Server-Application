@@ -71,8 +71,8 @@ public class Application extends Thread {
                           Integer.parseInt(data[1])));
             case "/":
                 data = inputData.split("\\/");
-                //return Integer.toString(calcVal(Integer.parseInt(data[0]), 
-                  //        Integer.parseInt(data[1]), '/'));
+                return Integer.toString(Math.floorDiv(Integer.parseInt(data[0]), 
+                          Integer.parseInt(data[1])));   
             default:
                 break;
             } 
