@@ -5,15 +5,9 @@ import java.net.Socket;
 import java.util.Date;
 
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Patrik.Karlsson
- */
+This is the Main class for Server. A loop that wait for serverSocket.accept() ti find a new Client.
+The Client connect on port 35000.
+*/
 
 public class Server {
     

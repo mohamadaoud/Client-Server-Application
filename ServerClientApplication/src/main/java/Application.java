@@ -4,15 +4,10 @@ import java.net.Socket;
 import java.util.logging.*;
 
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Patrik.Karlsson
- */
+The Application class with the run method that create a new thread for each new connected Client.
+Input string from Client will be calculated on the Server side and the result 
+will be returned back to Client.
+*/
 
 public class Application extends Thread {
     private Socket socket = null;
@@ -39,8 +34,8 @@ public class Application extends Thread {
                     outWriter.println(inputData+" = "+result);
                 }
             }
-        } catch (IOException e) {
-            Logger.getLogger(Application.class.getName()).log(Level.SEVERE, null, e);
+        } catch (IOException | NumberFormatException e) {
+            outWriter.println("Error: "+e.getMessage()+"\n\rConnection will be interrupted.");
         } finally {
             try {
                 inputReader.close();
@@ -77,6 +72,6 @@ public class Application extends Thread {
                 break;
             } 
         }
-        return "";
+        return "Unknown value. Input string may have wrong format.";
     }
 }
