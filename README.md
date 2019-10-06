@@ -17,4 +17,5 @@ som i sin tur ska svara på det och skicka svaret tillbaks till klienten.
 - 2- Du kanske behöver installera Homebrew först innan du går vidare för att installera Telnet.
 - 3- Kopiera och klistra in på terminalen den genom att köra: "/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 - 4- Install telnet genom att köra: "brew install telnet"
+
 Då är det klart för att köra applikationen...
